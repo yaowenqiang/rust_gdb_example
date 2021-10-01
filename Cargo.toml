@@ -8,3 +8,6 @@ edition = "2018"
 
 [dependencies]
 tokio = { version = "1.4.0", features=["full"]  }
+[profile.dev]
+opt-level = 0  # Controls the --opt-level the compiler builds with
+debug = true   # Controls whether the compiler passes `-g`
